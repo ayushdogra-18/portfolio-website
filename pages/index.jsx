@@ -18,7 +18,7 @@ import web2 from "../public/web2.png";
 import web3 from "../public/web3.jpg";
 // import web20 from "../public/web-20.png"
 import web6 from "../public/web6.jpg";
-import varun from '../public/profile.JPG'
+import varun from '../public/profile.jpg'
 // import blob1 from "../public/svg/blob1.svg";
 // import blob from '../public/svg/'
 import Toolkit from "../components/Toolkit";
