@@ -1,0 +1,675 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+}
+
+@media (max-width: 374px) {
+  .profile{
+    width: 250px;
+    height: 250px;
+  }
+  .john {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: .8rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 551px) {
+  .profile{
+    width: 250px;
+    height: 250px;
+  }
+  .john {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 0.9rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+  .john {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .john {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1023px) {
+  .john {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 1.8rem;
+    /* line-height: 1rem; */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1233px) {
+  .john {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 1rem;
+    /* line-height: 1rem; */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 1234px) and (max-width: 1412px) {
+  .john {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 1rem;
+    /* line-height: 1.2rem; */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 1413px) and (max-width: 1660px) {
+  .john {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 0;
+    padding-top: 5px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 1661px) {
+  .john {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-bottom: 1rem;
+  }
+  .mayer {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+@font-face {
+  font-family: "lobsterTwo";
+  src: url("../public/LobsterTwo-Italic.otf");
+}
+
+.kanit{
+  font-family: 'Kanit', sans-serif;
+}
+main {
+  font-family: Roboto;
+}
+.enlarge {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.enlarge:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+
+.enlarge-glow-github {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.enlarge-glow-github:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+
+.enlarge-glow-global {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.enlarge-glow-global:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+
+.group:hover > div {
+  filter: brightness(75%);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+
+/* toolkit */
+#toolkit ul.wrapper-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-rows: 100px;
+  grid-gap: 4rem;
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+#toolkit ul.wrapper-skills li svg {
+  transition: 0.5s;
+  display: inline-block;
+  width: 3.5em;
+}
+#toolkit ul.wrapper-skills li svg:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+/* #toolkit ul.wrapper-skills li svg path {
+  fill: white;
+} */
+#toolkit ul.wrapper-skills li h3 {
+  margin-top: 5px;
+  font-weight: 100;
+  text-shadow: 2px 3px 7px rgba(255, 255, 255, 0.4);
+}
+#toolkit ul.wrapper-skills .html5 path, #toolkit ul.wrapper-skills .html5:hover path {
+  fill: #e44c25;
+}
+#toolkit ul.wrapper-skills .css3 path, #toolkit ul.wrapper-skills .css3:hover path {
+  fill: #2795d3;
+}
+#toolkit ul.wrapper-skills .sass path, #toolkit ul.wrapper-skills .sass:hover path {
+  fill: #cf649a;
+}
+#toolkit ul.wrapper-skills .bootstrap path, #toolkit ul.wrapper-skills .bootstrap:hover path {
+  fill: #9400d3;
+}
+#toolkit ul.wrapper-skills .javascript path, #toolkit ul.wrapper-skills .javascript:hover path {
+  fill: #f7df1c;
+}
+#toolkit ul.wrapper-skills .typescript path, #toolkit ul.wrapper-skills .typescript:hover path {
+  fill: #106ab0;
+}
+#toolkit ul.wrapper-skills .react path, #toolkit ul.wrapper-skills .react:hover path {
+  fill: #61dbfb;
+}
+#toolkit ul.wrapper-skills .redux path, #toolkit ul.wrapper-skills .redux:hover path {
+  fill: #764abc;
+}
+#toolkit ul.wrapper-skills .node path, #toolkit ul.wrapper-skills .node:hover path {
+  fill: #00a86b;
+}
+#toolkit ul.wrapper-skills .express path, #toolkit ul.wrapper-skills .express:hover path {
+  fill: grey;
+}
+#toolkit ul.wrapper-skills .mongodb path, #toolkit ul.wrapper-skills .mongodb:hover path {
+  fill: #4db33d;
+}
+#toolkit ul.wrapper-skills .git path, #toolkit ul.wrapper-skills .git:hover path {
+  fill: #e44c25;
+}
+#toolkit ul.wrapper-skills .django path, #toolkit ul.wrapper-skills .django:hover path {
+  fill: #2aa473;
+}
+#toolkit ul.wrapper-skills .github path, #toolkit ul.wrapper-skills .github:hover path {
+  fill: #6f42c1;
+}
+#toolkit ul.wrapper-skills .vscode path, #toolkit ul.wrapper-skills .vscode:hover path {
+  fill: #0078d7;
+}
+#toolkit ul.wrapper-skills .python-blue {
+  fill: #387EB8; /* Blue color */
+}
+
+#toolkit ul.wrapper-skills .python-yellow {
+  fill: #FFE052; /* Yellow color */
+}
+#toolkit ul.wrapper-skills .tailwind path, #toolkit ul.wrapper-skills .tailwind:hover path {
+  fill: #06b0cd;
+}
+
+/* .blob1{
+  position: absolute;
+  width: 500px;
+  opacity: .1;
+  left: 36%;
+  top: 5%;
+  z-index: 1;
+} */
+
+.russo-one{
+  font-family: Roboto, sans-serif;
+}
+.acme{
+  font-family: Roboto, sans-serif;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  bottom: 0px;
+  overflow: hidden;
+  height: 180px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-bg-light{
+  background-image: url('../public/footer-bg-light.png');
+  background-position: bottom;
+  background-size: cover;
+}
+.footer-bg-dark{
+  background-image: url('../public/footer-bg-dark.png');
+  background-position: bottom;
+  background-size: cover;
+}
+footer h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -25px;
+  white-space: nowrap;
+  color: black;
+}
+footer h2 #heart {
+  position: relative;
+  top: 8px;
+  animation: heartbeat 1s infinite;
+}
+/* .wave {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: #111827;
+  transform: scale(1, 1);
+}
+
+.wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  right: -25%;
+  top: 20px;
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: #111827;
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
+} */
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+ }
+  20% {
+    transform: scale(1);
+ }
+  40% {
+    transform: scale(0.75);
+ }
+  60% {
+    transform: scale(1);
+ }
+  80% {
+    transform: scale(0.75);
+ }
+  100% {
+    transform: scale(0.75);
+ }
+}
+
+/* CONTACT FORM */
+#contact {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#contact .background {
+  display: flex;
+  min-height: 80vh;
+  /* padding: 44px; */
+}
+#contact .container {
+  width: 700px;
+  margin: auto;
+  /* padding: 10px; */
+  padding-bottom: 100px;
+  /* z-index: -1; */
+}
+#contact .screen {
+  position: relative;
+  background: snow ;
+  border-radius: 15px;
+}
+/* #contact .screen .dark{
+  background: snow ; 
+} */
+#contact .screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+#contact .screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #d0dbcd;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#contact .screen-header.dark {
+  /* background-color: #333; Dark mode background color */
+}
+#contact .screen-header-left {
+  margin-right: auto;
+}
+#contact .screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+#contact .screen-header-button.close {
+  background: #ed1c6f;
+ /* Change color here */
+}
+#contact .screen-header-button.maximize {
+  background: #e8e925;
+}
+#contact .screen-header-button.minimize {
+  background: #74c54f;
+}
+#contact .screen-header-right {
+  display: flex;
+}
+#contact .screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 50%;
+  background: #999;
+}
+#contact .screen-body {
+  display: flex;
+}
+#contact .screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+#contact .screen-body-item {
+  flex: 1;
+  padding: 25px;
+  flex-grow: 2;
+}
+#contact .app-title {
+  color:#0d9488 ;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 2rem;
+}
+#contact .app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 46px;
+  height: 4px;
+  background-color: #0d9488;
+}
+#contact .contact {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  align-self: flex-start;
+  color: #1f2937;
+}
+#contact .contact a.email {
+  text-decoration: none;
+  font-weight: 300;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  color:#0d9488;
+  &:hover{
+    border-bottom: 1px solid #0d9488;
+  }
+}
+#contact .app-form-group {
+  margin-bottom: 15px;
+}
+#contact .app-form-group .message {
+  margin-top: 40px;
+}
+#contact .app-form-group .buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+#contact .app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#contact .app-form-control::placeholder {
+  color: #666;
+}
+#contact .app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+#contact textarea.app-form-control {
+  min-height: 200px;
+  resize: vertical;
+}
+#contact .app-form-button:nth-of-type(1) {
+  float: left;
+}
+#contact .app-form-button:nth-of-type(2) {
+  float: right;
+}
+.button-transparent {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(208, 219, 205, 0.8);/* Replace 'your-color' with your desired background color */
+  color: black; /* Replace 'your-text-color' with your desired text color */
+  border-radius: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button-transparent:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px 2px #0d9488; /* Replace 'violet' with your desired glow color */
+  background-color: #4a4f59; /* Replace 'your-hover-color' with your desired hover background color */
+  color: whitesmoke; /* Replace 'your-hover-text-color' with your desired hover text color */
+}
+/* .background.dark {
+  background-color:#111827 ; 
+  z-index: -20; 
+}
+.background.light {
+  background-color:#fbf0d9 ;
+  z-index: -20;
+} */
+#contact.screen-header.dark{
+  background-color: red;
+}
+@media screen and (max-width: 768px) {
+  #contact .container {
+    width: 90%;
+    padding: 5px;
+  }
+  #contact .screen-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .screen-body-item {
+    padding: 25px 0;
+  }
+  
+  /* #contact .screen-body {
+    flex-direction: column;
+ } */
+  #contact .contact {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+ }
+  #contact .app-title {
+    margin-bottom: 30px;
+    flex-direction: row;
+    /* color:  */
+ }
+  #contact .app-title span {
+    margin-right: 12px;
+ }
+  #contact .app-title:after {
+    display: none;
+ }
+}
+@media screen and (max-width: 768px) {
+  #contact .screen-body {
+    padding: 40px;
+ }
+  #contact .screen-body-item {
+    padding: 0;
+ }
+}
+
+/* #tsparticles {
+  pointer-events: none;
+} */
