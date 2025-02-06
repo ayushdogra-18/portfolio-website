@@ -248,7 +248,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    Rock Paper Scissors
+                   Friction
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
                   Discord-inspired chat application designed for seamless communication. Includes features
@@ -291,7 +291,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    CodeDiary
+                    Scatch
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
                   Developed a secure admin panel for a bag e-commerce platform,bag management, pricing updates, and secure access control using JWT and bcrypt authentication.
