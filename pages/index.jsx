@@ -269,7 +269,7 @@ export default function Home() {
                 />
                 <div className="absolute top-4 right-4 flex gap-3">
                   <a
-                    href="https://github.com/ayushdogra-18/JobHunt"
+                    href="https://github.com/ayushdogra-18/JobHunting"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -309,7 +309,7 @@ export default function Home() {
                 />
                 <div className="absolute top-4 right-4 flex gap-3">
                   <a
-                    // href="https://github.com/ayushdogra-18/scatch"
+                    href="https://github.com/ayushdogra-18/code-review"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
