@@ -318,7 +318,6 @@ export default function Home() {
                       title="Github Repo Link"
                     />
                   </a>
-
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
@@ -330,12 +329,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-
-
-
-
-
           </div>
         </section>
         <Contact className='pb-10' darkMode={darkMode} />
